@@ -10,6 +10,7 @@ const HOST = _config.server.host;
 const PORT = _config.server.port;
 
 export default {
+  base: '/threejs-audio-visualiser/',
   server: {
     host: HOST,
     port: PORT
