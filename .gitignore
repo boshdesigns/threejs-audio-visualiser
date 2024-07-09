@@ -1,0 +1,16 @@
+/nbproject/
+.idea
+.DS_Store
+/vendor/
+/build/
+/build_tests/
+env.php
+env_test.php
+token.txt
+/test_data/
+.vscode/
+.idea
+.DS_Store
+/node_modules/
+/dist/
+/buildtools/webpack_config/server-local.json

@@ -1,0 +1,112 @@
+@font-face {
+  font-family: 'Roboto';
+  src:
+    local('Roboto-Thin'),
+    url('../assets/fonts/Roboto-Thin.woff2') format('woff2'),
+    url('../assets/fonts/Roboto-Thin.woff') format('woff');
+  font-weight: 300;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src:
+    local('Roboto-Regular'),
+    url('../assets/fonts/Roboto-Regular.woff2') format('woff2'),
+    url('../assets/fonts/Roboto-Regular.woff') format('woff');
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src:
+    local('Roboto-Medium'),
+    url('../assets/fonts/Roboto-Medium.woff2') format('woff2'),
+    url('../assets/fonts/Roboto-Medium.woff') format('woff');
+  font-weight: 600;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src:
+    local('Roboto-Bold'),
+    url('../assets/fonts/Roboto-Bold.woff2') format('woff2'),
+    url('../assets/fonts/Roboto-Bold.woff') format('woff');
+  font-weight: 900;
+  font-display: swap;
+}
+
+* {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+}
+
+.player-controls {
+  background: #191919;
+  border-radius: 0 0 15px 15px;
+  left: 50%;
+  padding: 50px 10px 10px 10px;
+  position: absolute;
+  transform: translate(-50%, -40px);
+  width: 300px;
+  z-index: 100;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  ul {
+    display: flex;
+    flex-direction: row;
+
+    li {
+      margin: 0 10px;
+
+      i {
+        cursor: pointer;
+
+        &.greyed {
+          opacity: 0.3;
+          cursor: not-allowed;
+
+          transition: 0.3s opacity ease-in-out;
+        }
+      }
+    }
+  }
+}
+
+input[type='file'] {
+  display: none;
+}
+
+.custom-file-upload {
+  border: 1px solid #ccc;
+  cursor: pointer;
+  display: inline-block;
+  padding: 3px 12px;
+  border-radius: 5px;
+}
+
+.uplaod {
+  position: absolute;
+  top: calc(100% + 28px);
+}
+.playing {
+  position: absolute;
+  top: calc(100% + 3px);
+  font-size: 12px;
+  font-style: italic;
+  color: #767676;
+}
+
+footer {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  font-size: 12px;
+  font-style: italic;
+  color: #767676;
+}
+
