@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- ESSENTIAL -->
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- GENERAL -->
+    <title>Vite ThreeJS — Template</title>
+    <meta name="title" content="Vite ThreeJS — Template" />
+    <meta name="application-name" content="Vite ThreeJS — Template" />
+    <meta
+      name="description"
+      content="Boilerplate template designed to quickly bootstrapping a 3D Web App, SPA, website or landing page with Three.JS, GLSL, Vite, TailwindCSS, ESLint, Husky and much more in just 30 seconds."
+    />
+    <meta
+      name="keywords"
+      content="
+        three, three js, threejs, three.js, three-js, 
+        three template, three js template, threejs template, three.js template, three-js template, 
+        three vite, three js vite, threejs vite, three.js vite, three-js vite,
+        three vite template, three js vite templante, threejs vite templante, three.js vite templante, three-js vite templante,
+        webgl, 3D, GLSL, GLSL shaders, shaders, web3D,
+        javascript, js, vanilla-javascript, vanilla-js, 
+        development, template, boilerplate, template-boilerplate, boilerplate-frontend, starter-kit,
+        vite, vite template, swc, husky, eslint, commitlint, prettier,
+        postcss, tailwind, tailwindcss, sass, scss, css, 
+        github, web app, web-app, webapp, spa
+      "
+    />
+
+    <!-- FACEBOOK -->
+    <meta property="og:url" content="" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Webpack ThreeJS — Template" />
+    <meta
+      property="og:description"
+      content="Boilerplate template designed to quickly bootstrapping a 3D Web App, SPA, website or landing page with Three.JS, GLSL, Vite, TailwindCSS, ESLint, Husky and much more in just 30 seconds."
+    />
+    <meta property="og:image" content="/og.jpg" />
+
+    <!-- TWITTER -->
+    <meta name="twitter:card" content="" />
+    <meta property="twitter:domain" content="" />
+    <meta property="twitter:url" content="" />
+    <meta name="twitter:title" content="Webpack ThreeJS — Template" />
+    <meta
+      name="twitter:description"
+      content="Boilerplate template designed to quickly bootstrapping a 3D Web App, SPA, website or landing page with Three.JS, GLSL, Vite, TailwindCSS, ESLint, Husky and much more in just 30 seconds."
+    />
+    <meta name="twitter:image" content="" />
+
+    <!-- iOS -->
+    <link rel="apple-touch-icon" href="" />
+    <link rel="mask-icon" href="" color="black" />
+    <meta name="apple-mobile-web-app-title" content="Vite ThreeJS — Template" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+
+    <!-- ANDROID -->
+    <meta name="theme-color" content="#000" />
+    <meta name="mobile-web-app-capable" content="yes" />
+
+    <script defer src="/_vercel/insights/script.js"></script>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script type="module" crossorigin src="/threejs-audio-visualiser/assets/index-Bagp-txL.js"></script>
+    <link rel="stylesheet" crossorigin href="/threejs-audio-visualiser/assets/index-Bqg9ZOAp.css">
+    <script type="module">import.meta.url;import("_").catch(()=>1);(async function*(){})().next();if(location.protocol!="file:"){window.__vite_is_modern_browser=true}</script>
+    <script type="module">!function(){if(window.__vite_is_modern_browser)return;console.warn("vite: loading legacy chunks, syntax error above and the same error below should be ignored");var e=document.getElementById("vite-legacy-polyfill"),n=document.createElement("script");n.src=e.src,n.onload=function(){System.import(document.getElementById('vite-legacy-entry').getAttribute('data-src'))},document.body.appendChild(n)}();</script>
+  </head>
+  <body>
+    <noscript class="text-center text-lg text-red-500">
+      Enable JavaScript to enjoy all the features of this app.
+    </noscript>
+    <main class="flex h-full bg-primary text-color">
+      <header>
+        <div class="player-controls">
+          <ul>
+            <li><i class="fa-solid fa-play" id="play-icon"></i></li>
+            <li><i class="fa-solid fa-pause greyed" id="pause-icon"></i></li>
+          </ul>
+
+          <div class="playing">
+            Now Playing: <span id="now-playing">Chill BeBoop</span>
+          </div>
+
+          <div class="uplaod">
+            <label
+              for="file-upload"
+              class="custom-file-upload"
+              id="file-upload-target"
+            >
+              Choose MP3
+            </label>
+            <input type="file" id="file-upload" accept="audio/mp3" />
+          </div>
+        </div>
+      </header>
+      <canvas id="canvas" class="z-[0] h-full w-full"></canvas>
+      <footer>ThreeJS Audio Visualiser</footer>
+    </main>
+
+    <script nomodule>!function(){var e=document,t=e.createElement("script");if(!("noModule"in t)&&"onbeforeload"in t){var n=!1;e.addEventListener("beforeload",(function(e){if(e.target===t)n=!0;else if(!e.target.hasAttribute("nomodule")||!n)return;e.preventDefault()}),!0),t.type="module",t.src=".",e.head.appendChild(t),t.remove()}}();</script>
+    <script nomodule crossorigin id="vite-legacy-polyfill" src="/threejs-audio-visualiser/assets/polyfills-legacy-CI3IdZJI.js"></script>
+    <script nomodule crossorigin id="vite-legacy-entry" data-src="/threejs-audio-visualiser/assets/index-legacy-CULo-F6C.js">System.import(document.getElementById('vite-legacy-entry').getAttribute('data-src'))</script>
+  </body>
+</html>
+
